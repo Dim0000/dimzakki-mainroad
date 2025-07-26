@@ -1,0 +1,234 @@
+@font-face {
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../webfonts/NotoSansJP-Regular.woff2") format("woff2"),
+    url("../webfonts/NotoSansJP-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Noto Sans JP';
+  font-style: bold;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../webfonts/NotoSansJP-Bold.woff2") format("woff2"),
+    url("../webfonts/NotoSansJP-Bold.woff") format("woff");
+}
+
+:root {
+  --border: #0095d9 solid 0.09375rem;
+}
+
+body {
+  color: #333333;
+  font-family: 'Noto Sans JP', sans-serif;
+  background-color: #ecf5ff;
+}
+
+.content h2 {
+  border-bottom: var(--border);
+  /* border-left: solid 0.2em #0095d9;
+  padding: 0em 0.3em; */
+}
+
+.content h3 {
+  border-bottom: #0095d9 dashed 0.09375rem;
+  /* border-left: solid 0.1em #0095d9;
+  padding: 0em 0.3em; */
+}
+
+.content figcaption {
+  font-size: x-small;
+  text-align: center;
+}
+
+.content table {
+  width: auto;
+  font-size: smaller;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.post__tags {
+  margin: 0.625rem 0 0;
+}
+
+.box {
+  position: relative;
+  top: 0.625rem;
+  padding: 1rem 1rem 0.625rem;
+  border: var(--border);
+  border-radius: 0.3125rem;
+  margin: 0 0 1.875rem;
+}
+
+.box .title {
+  position: absolute;
+  padding: 0 0.3125rem;
+  top: -0.700rem;
+  background-color: #fff;
+}
+
+.box ul,
+.box ol {
+  margin: 0 0 0 1.875rem;
+}
+
+.box li {
+  margin: 0;
+}
+
+.logo__text,
+.widget-taglist__link,
+.tags__item {
+  text-transform: none;
+}
+
+.product-link-box {
+  border: #e5e7eb 0.09375rem solid;
+  border-radius: 0.9375rem;
+  margin: 1.25rem 0;
+  display: flex;
+  overflow: hidden;
+}
+
+.product-link-info {
+  border-left: #e5e7eb 0.09375rem solid;
+}
+
+.product-link-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ecf5ff;
+  padding: 1.00rem;
+}
+
+.product-link-title {
+  padding: 1.25rem;
+  margin: 0;
+}
+
+.product-link-title a {
+  font-weight: normal;
+}
+
+.product-link-price {
+  padding: 0 1.25rem;
+  text-align: right;
+  margin: 0;
+  font-weight: bold;
+  color: red;
+  font-size: large;
+}
+
+.product-link-type {
+  padding: 0 1.25rem 1.25rem;
+  margin: 0;
+}
+
+.profile-icon {
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+}
+
+.profile-name {
+  margin: 0.625rem 0;
+  text-align: center;
+}
+
+.profile-detail {
+  padding: 0 0.625rem;
+  margin: 0;
+}
+
+@media screen and (max-width: 480px) {
+  .lum-lightbox-inner img {
+    max-width: 160vw !important;
+  }
+}
+
+.widget-taglist__link.btn {
+  font-weight: normal;
+  padding: 0.0625rem 0.3125rem;
+  color: #333333;
+  background: #ecf5ff;
+  border-radius: 0.9375rem;
+}
+
+.img {
+  border: solid 0.00625rem #777777;
+}
+
+.xCodeBlock_title {
+  display: inline-block;
+  font-size: smaller;
+  border-radius: 0.5em 0.5em 0 0;
+  padding: 0.3em 0.8em;
+  background: #272822;
+  color: white;
+  margin-left: 0.08em;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.xCodeBlock_code {
+  margin-top: -0.3em;
+}
+
+.xCodeBlock_code pre {
+  padding: 0.5em;
+  margin-top: 0;
+  border-top: 0;
+  border-radius: 0.3125rem;
+}
+
+summary {
+  margin: 0 0 1.25rem 1rem;
+}
+
+input {
+  font-size: 1.2em;
+  font-weight: bolder;
+}
+
+#result {
+  margin: 1em;
+}
+
+.item_title {
+  text-decoration: none;
+  color: #0095d9;
+  font-weight: bolder;
+}
+
+.item_excerpt {
+  background: white;
+  margin: 0.5em 2em 1em;
+  padding: 0.5em;
+  border: dashed 1px lightgray;
+  font-size: smaller;
+}
+
+.item_excerpt b {
+  color: #0095d9;
+  background: #ecf5ff;
+}
+
+th {
+  background-color: #ecf5ff;
+}
+
+.ranking-pv {
+  font-size: smaller;
+  float: right;
+  background-color: #ecf5ff;
+  border-radius: 0.9375rem;
+  padding: 0.0625rem 0.3125rem;
+}
+
+.widget__item {
+  overflow: hidden;
+}
