@@ -1,4 +1,5 @@
 {{- if $thumbnail := .page.Params.thumbnail }}
+{{ $base := "https://dim0000.github.io/dimzakki-mainroad/" }}
 	{{- $class := .class }}
 	{{- $visibility := .page.Site.Params.thumbnail.visibility | default (slice "list" "post") }}
 
@@ -12,7 +13,7 @@
 	{{- if in $visibility $class }}
 	<figure class="{{ with $class }}{{ . }}__thumbnail {{ end }}thumbnail">
 		{{ if eq $class "list" }}<a class="thumbnail__link" href="{{ .page.RelPermalink }}">{{ end }}
-		<img class="thumbnail__image" src="{{ $thumbnail | relURL }}" alt="{{ .page.Title }}">
+		<img class="thumbnail__image" src="{{ printf "%s%s" $base $thumbnail }}" alt="{{ .page.Title }}">
 		{{ if eq $class "list" }}</a>{{ end }}
 	</figure>
 	{{- end }}
