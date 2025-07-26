@@ -8,9 +8,6 @@ summarylength = 120
 enableGitInfo = "true" # 最終更新日をgitから取得
 timeout = "60s"
 
-[services.googleAnalytics]
-  ID = "G-YZ8ZTS9C8C" # アナリティクスのトラッキングID
-
 [permalinks]
   post = "/:contentbasename/"
 
@@ -29,7 +26,7 @@ timeout = "60s"
   home = "right"
   list = "right"
   single = "right"
-  widgets = ["adsense", "profile", "ranking", "categories", "taglist", "recent", "archives", "related", "adsense2"]
+  widgets = ["profile", "ranking", "categories", "taglist", "recent", "archives", "related"]
 
 [Params.widgets]
   recent_num = 5
